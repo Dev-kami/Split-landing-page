@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  /* overflow: hidden; */
+}
+.split.left {
+  flex: 1;
+  background: url("/blue-moon-above-the-city-wallpaper_2.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  width: 100%;
+}
+.split.right {
+  flex: 1;
+  background: url("/blue_sky_green_03_hd_picture_166203.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+  width: 100%;
+}
+.split {
+  text-align: center;
+  padding-top: 3rem;
+  transition: 0.5s ease-in-out;
+}
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 2.5rem;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  border: 1px solid #fff;
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+.left a:hover {
+  background: HSL(238, 80%, 63%);
+  border: 1px solid HSL(238, 80%, 63%);
+}
+.right a:hover {
+  background: rgb(57, 218, 57);
+  border: 1px solid rgb(57, 218, 57);
+}
+
+.hover-left {
+  flex: 2;
+}
+.hover-right {
+  flex: 2;
+}
+
+@media (max-width: 50rem) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  a {
+    padding: 0.3rem 1rem;
+  }
+}
